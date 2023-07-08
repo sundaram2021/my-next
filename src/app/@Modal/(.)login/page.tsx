@@ -5,7 +5,7 @@ import { Modal } from '@/app/components/Modal'
 import { useRouter } from 'next/navigation';
 
 
-function page() {
+const  page = () => {
     const router = useRouter();
   return (
     <Modal onClose={() => router.back()} >
