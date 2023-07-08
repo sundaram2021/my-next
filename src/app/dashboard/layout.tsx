@@ -1,4 +1,4 @@
-import './globals.css'
+
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -10,16 +10,17 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-  Modal
+  analytics,
+  team,
 }: {
   children: React.ReactNode
-  Modal: React.ReactNode
+  analytics: React.ReactNode,
+  team: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}> 
-      {Modal} 
-      {children}
+      <body className={`${inter.className} flex flex-col gap-4`}>
+      {children}{analytics}{team}
       </body>
     </html>
   )
