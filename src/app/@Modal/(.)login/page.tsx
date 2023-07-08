@@ -5,7 +5,7 @@ import { Modal } from '@/app/components/Modal'
 import { useRouter } from 'next/navigation';
 
 
-const  page = () => {
+const  Page = () => {
     const router = useRouter();
   return (
     <Modal onClose={() => router.back()} >
@@ -20,4 +20,4 @@ const  page = () => {
   )
 }
 
-export default page
+export default Page
